@@ -1,4 +1,4 @@
-# CSCE580-Fall2023-vansh_nagpal-Repo
+# CSCE580 Fall2023 Water Quality Decision Chatbot
 
 ## To use the chatbot for yourself, follow these instructions:
 ### Rasa Chatbot
