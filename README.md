@@ -50,15 +50,15 @@ rasa shell
 
 #### See docs for a detailed report on the project and instructions to reproduce results
 
-#### See code for implementation of chatbot and decision maker in Python
-#####  - code/: robust chatbot based on RASA with learning-based decision maker 
+#### See ./code for implementation of chatbot and decision maker in Python
+#####  - robust chatbot based on RASA with learning-based decision maker 
 #####  - see [rasa docs](https://rasa.com/docs/rasa/) for more information
 
-#### See data for all necessary data to run instance of chatbot
-#####  - csv: labeled dataset from Kaggle
-#####  - json: contains all parameter codes and site codes for USGS API
-#####  - model: contains saved SVC model that trained on Kaggle dataset
-#####  - npy: contains BERT vectorized embeddings for site names
-#####  - user_sessions: contains saved conversations from user
+#### See ./data for all necessary data to run instance of chatbot
+#####  - ./data/csv: labeled dataset from Kaggle
+#####  - ./data/json: contains all parameter codes and site codes for USGS API
+#####  - ./data/model: contains saved SVC model that trained on Kaggle dataset
+#####  - ./data/npy: contains BERT vectorized embeddings for site names
+#####  - ./data/user_sessions: contains saved conversations from user
 
 #### See test for some example tests of the system working.
