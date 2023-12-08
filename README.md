@@ -48,7 +48,7 @@ rasa shell
 
 #### Water Quality Project for CSCE 580: Artificial Intelligence
 
-#### See docs for a detailed report on the project and instructions to reproduce results
+#### See ./docs for a detailed report on the project and instructions to reproduce results
 
 #### See ./code for implementation of chatbot and decision maker in Python
 #####  - robust chatbot based on RASA with learning-based decision maker 
@@ -61,4 +61,4 @@ rasa shell
 #####  - ./data/npy: contains BERT vectorized embeddings for site names
 #####  - ./data/user_sessions: contains saved conversations from user
 
-#### See test for some example tests of the system working.
+#### See ./test for some example tests of the system working.
