@@ -1,0 +1,145 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: action_save_conversation
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_out_of_scope
+
+- rule: Answer effect_ph_water
+  steps:
+  - intent: effect_ph_water
+  - action: utter_effect_ph_water
+    
+- rule: Answer What_is_turbidity
+  steps:
+  - intent: What_is_turbidity
+  - action: utter_What_is_turbidity
+    
+- rule: Answer dissolved_oxygen
+  steps:
+  - intent: dissolved_oxygen
+  - action: utter_dissolved_oxygen
+    
+- rule: Answer effect_high_chloride_drinking
+  steps:
+  - intent: effect_high_chloride_drinking
+  - action: utter_effect_high_chloride_drinking
+    
+- rule: Answer spring_good_source_drinking
+  steps:
+  - intent: spring_good_source_drinking
+  - action: utter_spring_good_source_drinking
+    
+- rule: Answer Tell_me_more
+  steps:
+  - intent: Tell_me_more
+  - action: utter_Tell_me_more
+    
+- rule: Answer hi_doing
+  steps:
+  - intent: hi_doing
+  - action: utter_hi_doing
+    
+- rule: Answer How_are_you_doing
+  steps:
+  - intent: How_are_you_doing
+  - action: utter_How_are_you_doing
+    
+- rule: Answer What_is_your_name
+  steps:
+  - intent: What_is_your_name
+  - action: utter_What_is_your_name
+    
+- rule: Answer Are_you_real
+  steps:
+  - intent: Are_you_real
+  - action: utter_Are_you_real
+    
+- rule: Answer hows_day_going
+  steps:
+  - intent: hows_day_going
+  - action: utter_hows_day_going
+    
+- rule: Answer anything_interesting_lately
+  steps:
+  - intent: anything_interesting_lately
+  - action: utter_anything_interesting_lately
+    
+- rule: Answer What_do_you_do
+  steps:
+  - intent: What_do_you_do
+  - action: utter_What_do_you_do
+    
+- rule: Answer fun_plan_weekend
+  steps:
+  - intent: fun_plan_weekend
+  - action: utter_fun_plan_weekend
+    
+- rule: Answer Do_you_have_any
+  steps:
+  - intent: Do_you_have_any
+  - action: utter_Do_you_have_any
+    
+- rule: Answer traveled_anywhere_exciting_recently
+  steps:
+  - intent: traveled_anywhere_exciting_recently
+  - action: utter_traveled_anywhere_exciting_recently
+    
+- rule: Answer whats_favorite_type_cuisine
+  steps:
+  - intent: whats_favorite_type_cuisine
+  - action: utter_whats_favorite_type_cuisine
+    
+- rule: Answer morning_person_night_owl
+  steps:
+  - intent: morning_person_night_owl
+  - action: utter_morning_person_night_owl
+    
+- rule: Answer like_relax_long_day
+  steps:
+  - intent: like_relax_long_day
+  - action: utter_like_relax_long_day
+    
+- rule: Answer upcoming_vacation_planned
+  steps:
+  - intent: upcoming_vacation_planned
+  - action: utter_upcoming_vacation_planned
+    
+- rule: Answer sport_fitness_activity
+  steps:
+  - intent: sport_fitness_activity
+  - action: utter_sport_fitness_activity
+    
+- rule: Answer whats_last_book_read
+  steps:
+  - intent: whats_last_book_read
+  - action: utter_whats_last_book_read
+
+- rule: Make api call when needed
+  steps:
+  - intent: ask_for_data
+  - action: action_make_api_call
+
+- rule: assess quality when needed
+  steps:
+  - intent: determine_water_quality
+  - action: action_get_water_decision
+
+
+- rule: Answer Do not answer
+  steps:
+  - intent: Do not answer
+  - action: utter_Do not answer

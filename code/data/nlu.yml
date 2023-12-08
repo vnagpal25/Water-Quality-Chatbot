@@ -1,0 +1,811 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: effect_ph_water
+  examples: |
+    - What effect does pH have on water?
+    - What does pH have on water?
+    - How does pH affect water?
+    - What effects does pH have on water?
+    - Tell me the effect of pH on water?
+    - How does pH affect water quality?
+
+- intent: What_is_turbidity
+  examples: |
+    - What is turbidity?
+    - Tell me the turbidity?
+    - Tell me the term turbidity?
+    - What is Turbidity?
+    - What is turbidity? What are some examples?
+    - Tell me the definition of turbidity?
+
+- intent: dissolved_oxygen
+  examples: |
+    - What is dissolved oxygen?
+    - What is dissolved oxygen? What are some examples?
+    - What is dissolved oxygen? What is it?
+    - What is dissipated oxygen?
+    - What is Dissolved Oxygen?
+
+- intent: effect_high_chloride_drinking
+  examples: |
+    - What effect does high chloride have on drinking water?
+    - What effect does high chloride have on water quality?
+    - How does high chloride affect drinking water?
+    - What effects does high chloride have on drinking water?
+    - What effects does high chloride have on water quality?
+    - Does high chloride have any effect on drinking water?
+
+- intent: spring_good_source_drinking
+  examples: |
+    - Are springs a good source of drinking water?
+    - Are springs good sources of drinking water?
+    - Are springs a good source of water?
+    - Are springs good for drinking water?
+    - Are springs good sources of water?
+    - Why are springs good sources of drinking water?
+    - Is spring water good for drinking water?
+
+- intent: Tell_me_more
+  examples: |
+    - Tell me more
+    - Tell me more.
+    - Tell me more Tell me more.
+    - Tell me more. Tell me more
+    - Tell me more tell me.
+    - Tell me more tell me more.
+    - Tell me more please.
+
+- intent: hi_doing
+  examples: |
+    - Hi how are you doing?
+    - Hi how are you?
+    - Hello how are you doing?
+    - Hi what are you doing?
+    - Hey how are you doing?
+
+- intent: How_are_you_doing
+  examples: |
+    - How are you doing?
+    - How's your day?
+    - What are you doing?
+    - How is your day going?
+    - How are you?
+
+- intent: What_is_your_name
+  examples: |
+    - What is your name?
+    - What is your name and why?
+    - What's your name?
+    - Tell me the meaning of your name?
+    - What is your name? What is your name?
+    - Tell me the name of your name?
+
+- intent: Are_you_real
+  examples: |
+    - Are you real?
+    - Are you real or fake?
+    - Is it true that you are real?
+    - Are you real? Are you real?
+    - Are you a real person?
+    - Are you real? Why or why not?
+
+- intent: hows_day_going
+  examples: |
+    - How's your day going?
+    - How is your day going?
+    - What's your day going?
+    - How's the day going?
+    - What's your day like?
+    - How does your day go?
+
+- intent: anything_interesting_lately
+  examples: |
+    - Have you been up to anything interesting lately?
+    - Have you been up to anything lately?
+    - Have you been doing anything interesting lately?
+    - What have you been up to lately?
+    - Have you been up to something interesting lately?
+    - Have you been up to anything interesting recently?
+
+- intent: What_do_you_do
+  examples: |
+    - What do you do for work?
+    - What are you doing for work?
+    - What can I do for work?
+    - What do you do for a living?
+    - What do I do for work?
+    - What should I do for work?
+
+- intent: fun_plan_weekend
+  examples: |
+    - Any fun plans for the weekend?
+    - What's your plan for the weekend?
+    - What are your plans for the weekend?
+    - What are your fun plans for the weekend?
+    - What's your weekend plan?
+    - What's your fun weekend plan?
+    - What is your plan for the weekend?
+
+- intent: Do_you_have_any
+  examples: |
+    - Do you have any hobbies?
+    - Do you have hobbies?
+    - Do you have a hobbies?
+    - Do you have a hobby?
+    - What hobbies do you have?
+    - do you have any hobbies?
+
+- intent: traveled_anywhere_exciting_recently
+  examples: |
+    - Have you traveled anywhere exciting recently?
+    - Have you traveled anywhere interesting recently?
+    - Have you ever traveled anywhere exciting recently?
+    - Have you ever traveled anywhere exciting lately?
+    - Have you traveled anywhere exciting lately?
+    - Have you traveled to any exciting places recently?
+
+- intent: whats_favorite_type_cuisine
+  examples: |
+    - What's your favorite type of cuisine?
+    - What's your favourite type of cuisine?
+    - What are your favorite types of cuisine?
+    - What is your favorite type of cuisine?
+    - What is your favorite type of food?
+    - What's your favorite type of food?
+
+- intent: morning_person_night_owl
+  examples: |
+    - Are you a morning person or a night owl?
+    - Are you a morning person or night owl?
+    - Are you morning person or night owl?
+    - Are you a morning person or a night person?
+    - Are you a night owl or morning person?
+    - Are you a morning person or night-owl?
+    - Are you a morning or night owl?
+
+- intent: like_relax_long_day
+  examples: |
+    - How do you like to relax after a long day?
+    - How do you relax after a long day?
+    - How do I relax after a long day?
+    - How can I relax after a long day?
+    - What is it like to relax after a long day?
+    - What do you like to do after a long day?
+    - What's the best way to relax after a long day?
+
+- intent: upcoming_vacation_planned
+  examples: |
+    - Do you have any upcoming vacations planned?
+    - Do you have any upcoming vacation plans?
+    - Do you have any vacation plans?
+    - Do you have any vacation planned?
+    - Do you have upcoming vacations planned?
+    - Do you have any upcoming vacation planned?
+    - Do you have any vacations planned?
+
+- intent: sport_fitness_activity
+  examples: |
+    - Are you into any sports or fitness activities?
+    - Are you into sports or fitness activities?
+    - Are you into sports or fitness?
+    - Are you into sports and fitness?
+    - Are you into sports?
+    - Are you into fitness activities?
+    - Are you into sports and fitness activities?
+
+- intent: whats_last_book_read
+  examples: |
+    - What's the last book you read?
+    - Tell me the best book you have read?
+    - What was the last book you read?
+    - Tell me the last book you've read?
+    - Tell me the last book you read?
+    - Tell me the best book you have ever read?
+
+- intent: ask_for_data
+  examples: |
+    - Get me the water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Get me the water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Get me the water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Get me the water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Get me the water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Get me the water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Get me the water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Get me the water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Fetch me the relevant water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Fetch me the relevant water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Fetch me the relevant water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Fetch me the relevant water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Fetch me the relevant water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Fetch me the relevant water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Fetch me the relevant water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Fetch me the relevant water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Can you inform me of the water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Can you inform me of the water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Can you inform me of the water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Can you inform me of the water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Can you inform me of the water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Can you inform me of the water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Can you inform me of the water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Can you inform me of the water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Retrieve the water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Retrieve the water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Retrieve the water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Retrieve the water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Retrieve the water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Retrieve the water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Retrieve the water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Retrieve the water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Fetch the water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Fetch the water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Fetch the water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Fetch the water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Fetch the water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Fetch the water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Fetch the water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Fetch the water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Obtain the water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Obtain the water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Obtain the water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Obtain the water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Obtain the water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Obtain the water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Obtain the water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Obtain the water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Provide the water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Provide the water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Provide the water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Provide the water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Provide the water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Provide the water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Provide the water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Provide the water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Acquire the water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Acquire the water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Acquire the water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Acquire the water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Acquire the water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Acquire the water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Acquire the water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Acquire the water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Access the water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Access the water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Access the water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Access the water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Access the water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Access the water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Access the water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Access the water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Bring me the water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Bring me the water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Bring me the water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Bring me the water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Bring me the water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Bring me the water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Bring me the water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Bring me the water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Secure the water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Secure the water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Secure the water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Secure the water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Secure the water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Secure the water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Secure the water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Secure the water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Procure the water data for [BUCK CREEK NEAR LONGS, SC](site_name)
+    - Procure the water data for [WACCAMAW RIVER NEAR LONGS, SC](site_name)
+    - Procure the water data for [CRABTREE SWAMP AT CONWAY, SC](site_name)
+    - Procure the water data for [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)
+    - Procure the water data for [PEE DEE RIVER AT POSTON, SC](site_name)
+    - Procure the water data for [CHINNERS SWAMP NEAR AYNOR, SC](site_name)
+    - Procure the water data for [WATEREE RIVER NR. CAMDEN, SC](site_name)
+    - Procure the water data for [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)
+    - Get me the water data for [buck creek near longs, sc](site_name)
+    - Get me the water data for [waccamaw river near longs, sc](site_name)
+    - Get me the water data for [crabtree swamp at conway, sc](site_name)
+    - Get me the water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Get me the water data for [pee dee river at poston, sc](site_name)
+    - Get me the water data for [chinners swamp near aynor, sc](site_name)
+    - Get me the water data for [wateree river nr. camden, sc](site_name)
+    - Get me the water data for [broad river near jenkinsville, sc](site_name)
+    - Fetch me the relevant water data for [buck creek near longs, sc](site_name)
+    - Fetch me the relevant water data for [waccamaw river near longs, sc](site_name)
+    - Fetch me the relevant water data for [crabtree swamp at conway, sc](site_name)
+    - Fetch me the relevant water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Fetch me the relevant water data for [pee dee river at poston, sc](site_name)
+    - Fetch me the relevant water data for [chinners swamp near aynor, sc](site_name)
+    - Fetch me the relevant water data for [wateree river nr. camden, sc](site_name)
+    - Fetch me the relevant water data for [broad river near jenkinsville, sc](site_name)
+    - Can you inform me of the water data for [buck creek near longs, sc](site_name)
+    - Can you inform me of the water data for [waccamaw river near longs, sc](site_name)
+    - Can you inform me of the water data for [crabtree swamp at conway, sc](site_name)
+    - Can you inform me of the water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Can you inform me of the water data for [pee dee river at poston, sc](site_name)
+    - Can you inform me of the water data for [chinners swamp near aynor, sc](site_name)
+    - Can you inform me of the water data for [wateree river nr. camden, sc](site_name)
+    - Can you inform me of the water data for [broad river near jenkinsville, sc](site_name)
+    - Retrieve the water data for [buck creek near longs, sc](site_name)
+    - Retrieve the water data for [waccamaw river near longs, sc](site_name)
+    - Retrieve the water data for [crabtree swamp at conway, sc](site_name)
+    - Retrieve the water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Retrieve the water data for [pee dee river at poston, sc](site_name)
+    - Retrieve the water data for [chinners swamp near aynor, sc](site_name)
+    - Retrieve the water data for [wateree river nr. camden, sc](site_name)
+    - Retrieve the water data for [broad river near jenkinsville, sc](site_name)
+    - Fetch the water data for [buck creek near longs, sc](site_name)
+    - Fetch the water data for [waccamaw river near longs, sc](site_name)
+    - Fetch the water data for [crabtree swamp at conway, sc](site_name)
+    - Fetch the water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Fetch the water data for [pee dee river at poston, sc](site_name)
+    - Fetch the water data for [chinners swamp near aynor, sc](site_name)
+    - Fetch the water data for [wateree river nr. camden, sc](site_name)
+    - Fetch the water data for [broad river near jenkinsville, sc](site_name)
+    - Obtain the water data for [buck creek near longs, sc](site_name)
+    - Obtain the water data for [waccamaw river near longs, sc](site_name)
+    - Obtain the water data for [crabtree swamp at conway, sc](site_name)
+    - Obtain the water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Obtain the water data for [pee dee river at poston, sc](site_name)
+    - Obtain the water data for [chinners swamp near aynor, sc](site_name)
+    - Obtain the water data for [wateree river nr. camden, sc](site_name)
+    - Obtain the water data for [broad river near jenkinsville, sc](site_name)
+    - Provide the water data for [buck creek near longs, sc](site_name)
+    - Provide the water data for [waccamaw river near longs, sc](site_name)
+    - Provide the water data for [crabtree swamp at conway, sc](site_name)
+    - Provide the water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Provide the water data for [pee dee river at poston, sc](site_name)
+    - Provide the water data for [chinners swamp near aynor, sc](site_name)
+    - Provide the water data for [wateree river nr. camden, sc](site_name)
+    - Provide the water data for [broad river near jenkinsville, sc](site_name)
+    - Acquire the water data for [buck creek near longs, sc](site_name)
+    - Acquire the water data for [waccamaw river near longs, sc](site_name)
+    - Acquire the water data for [crabtree swamp at conway, sc](site_name)
+    - Acquire the water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Acquire the water data for [pee dee river at poston, sc](site_name)
+    - Acquire the water data for [chinners swamp near aynor, sc](site_name)
+    - Acquire the water data for [wateree river nr. camden, sc](site_name)
+    - Acquire the water data for [broad river near jenkinsville, sc](site_name)
+    - Access the water data for [buck creek near longs, sc](site_name)
+    - Access the water data for [waccamaw river near longs, sc](site_name)
+    - Access the water data for [crabtree swamp at conway, sc](site_name)
+    - Access the water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Access the water data for [pee dee river at poston, sc](site_name)
+    - Access the water data for [chinners swamp near aynor, sc](site_name)
+    - Access the water data for [wateree river nr. camden, sc](site_name)
+    - Access the water data for [broad river near jenkinsville, sc](site_name)
+    - Bring me the water data for [buck creek near longs, sc](site_name)
+    - Bring me the water data for [waccamaw river near longs, sc](site_name)
+    - Bring me the water data for [crabtree swamp at conway, sc](site_name)
+    - Bring me the water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Bring me the water data for [pee dee river at poston, sc](site_name)
+    - Bring me the water data for [chinners swamp near aynor, sc](site_name)
+    - Bring me the water data for [wateree river nr. camden, sc](site_name)
+    - Bring me the water data for [broad river near jenkinsville, sc](site_name)
+    - Secure the water data for [buck creek near longs, sc](site_name)
+    - Secure the water data for [waccamaw river near longs, sc](site_name)
+    - Secure the water data for [crabtree swamp at conway, sc](site_name)
+    - Secure the water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Secure the water data for [pee dee river at poston, sc](site_name)
+    - Secure the water data for [chinners swamp near aynor, sc](site_name)
+    - Secure the water data for [wateree river nr. camden, sc](site_name)
+    - Secure the water data for [broad river near jenkinsville, sc](site_name)
+    - Procure the water data for [buck creek near longs, sc](site_name)
+    - Procure the water data for [waccamaw river near longs, sc](site_name)
+    - Procure the water data for [crabtree swamp at conway, sc](site_name)
+    - Procure the water data for [aiw at highway 544 at socastee, sc](site_name)
+    - Procure the water data for [pee dee river at poston, sc](site_name)
+    - Procure the water data for [chinners swamp near aynor, sc](site_name)
+    - Procure the water data for [wateree river nr. camden, sc](site_name)
+    - Procure the water data for [broad river near jenkinsville, sc](site_name)
+    - Get me the water data for [BUCk CrEeK nEar Longs, sc](site_name)
+    - Get me the water data for [WACcaMaw rivER NeAr LONGS, sC](site_name)
+    - Get me the water data for [CraBtREe swamp aT conwAY, sC](site_name)
+    - Get me the water data for [aiW aT hIGhWAY 544 AT socAStEe, SC](site_name)
+    - Get me the water data for [pEe Dee rivER AT pOston, SC](site_name)
+    - Get me the water data for [chinNers SWAmp neaR aYNor, sC](site_name)
+    - Get me the water data for [WAteRee RIveR nR. CamDEn, Sc](site_name)
+    - Get me the water data for [broAd rIVeR neAR JENKInsvIlLe, Sc](site_name)
+    - Fetch me the relevant water data for [BUcK CREEk NeAr lONgs, Sc](site_name)
+    - Fetch me the relevant water data for [WAcCAMAW rIVer nEAR lOnGs, Sc](site_name)
+    - Fetch me the relevant water data for [CrabtrEe swamP At cONway, Sc](site_name)
+    - Fetch me the relevant water data for [aIW AT HIGhwaY 544 aT SOcaSteE, Sc](site_name)
+    - Fetch me the relevant water data for [pEE DeE RivER AT PosTON, sC](site_name)
+    - Fetch me the relevant water data for [chinnerS swAmp neAr AynOR, SC](site_name)
+    - Fetch me the relevant water data for [WAtEreE RIVer nr. CAmdEn, sC](site_name)
+    - Fetch me the relevant water data for [brOaD RiVeR NeAr jENkINSvillE, SC](site_name)
+    - Can you inform me of the water data for [bUck creEk NeAR LONGS, SC](site_name)
+    - Can you inform me of the water data for [WAcCaMAw RIVeR NeaR loNgs, Sc](site_name)
+    - Can you inform me of the water data for [crABTree SWAMp AT cOnwaY, Sc](site_name)
+    - Can you inform me of the water data for [AiW AT HIghWAy 544 at soCaStEE, Sc](site_name)
+    - Can you inform me of the water data for [PEE deE rIVER At PostON, sC](site_name)
+    - Can you inform me of the water data for [chiNNers Swamp NEAR AynOR, sc](site_name)
+    - Can you inform me of the water data for [WatERee rIvER Nr. camdEN, sc](site_name)
+    - Can you inform me of the water data for [broaD riVer nEar jEnKINsviLle, sC](site_name)
+    - Retrieve the water data for [bUCK CREeK Near loNgs, Sc](site_name)
+    - Retrieve the water data for [WaCcamaw River NeAr LonGS, sC](site_name)
+    - Retrieve the water data for [cRAbtREE SwaMp at Conway, sc](site_name)
+    - Retrieve the water data for [AIW AT hIgHWay 544 aT SoCAstee, sc](site_name)
+    - Retrieve the water data for [pee DEe RIver at postOn, Sc](site_name)
+    - Retrieve the water data for [CHiNnErs SwAMp near aynOr, sc](site_name)
+    - Retrieve the water data for [WATErEe riVer nR. cAMDen, Sc](site_name)
+    - Retrieve the water data for [bROad River Near jeNKinSViLlE, sc](site_name)
+    - Fetch the water data for [BUCK creeK nEAr LoNGS, sC](site_name)
+    - Fetch the water data for [wACcamAW RiVER NEAR LonGs, SC](site_name)
+    - Fetch the water data for [crAbTrEE SwAmP AT CoNWAY, sC](site_name)
+    - Fetch the water data for [aIw aT highwAy 544 AT sOCAStee, sC](site_name)
+    - Fetch the water data for [PEe Dee rIVeR at postON, SC](site_name)
+    - Fetch the water data for [cHInNerS SwaMP near AyNOr, SC](site_name)
+    - Fetch the water data for [wAtEREe RiveR Nr. caMDeN, sc](site_name)
+    - Fetch the water data for [BROad RIveR NEAr jeNKinsViLLe, Sc](site_name)
+    - Obtain the water data for [BUcK CReEk NEAR LONGS, sc](site_name)
+    - Obtain the water data for [WACCAmaw river neaR LOngs, sc](site_name)
+    - Obtain the water data for [CrabTREE SWaMP at cONwaY, Sc](site_name)
+    - Obtain the water data for [AIW at hiGHwAy 544 At sOcAsTee, sc](site_name)
+    - Obtain the water data for [pEE dee riVer AT pOstoN, Sc](site_name)
+    - Obtain the water data for [ChINnErS swAmP nEAR AYnor, sc](site_name)
+    - Obtain the water data for [wAterEe rIVer nR. CAMDEn, sC](site_name)
+    - Obtain the water data for [BROAD rIveR NEAr jenKiNsvIlLe, Sc](site_name)
+    - Provide the water data for [bUCK CREEK near lONGS, Sc](site_name)
+    - Provide the water data for [waccAmaW riveR neAR Longs, Sc](site_name)
+    - Provide the water data for [cRabTree swAmP aT conWaY, SC](site_name)
+    - Provide the water data for [aIw at hIgHwAy 544 AT SoCAstEe, SC](site_name)
+    - Provide the water data for [Pee dee RIvER At POstoN, Sc](site_name)
+    - Provide the water data for [cHinNERS sWAMp nEAr AyNor, Sc](site_name)
+    - Provide the water data for [wAterEE riVER nr. CAMDEn, sC](site_name)
+    - Provide the water data for [BroaD riVer NEar JENKinSviLlE, sc](site_name)
+    - Acquire the water data for [BUcK CReEk near LoNGS, SC](site_name)
+    - Acquire the water data for [wACCAMAw riVEr NeAR lOnGs, Sc](site_name)
+    - Acquire the water data for [craBTReE SwAmP At CoNwAy, SC](site_name)
+    - Acquire the water data for [aIw AT hiGHWAy 544 AT SoCaSTEe, SC](site_name)
+    - Acquire the water data for [peE dee rIVEr At POSToN, SC](site_name)
+    - Acquire the water data for [chinneRS SWaMP nEaR AYNor, sc](site_name)
+    - Acquire the water data for [waTEReE rivER nr. CAmdEN, sc](site_name)
+    - Acquire the water data for [bRoAd RiveR NEaR jENKinsvILle, SC](site_name)
+    - Access the water data for [BuCk CReek neAR lonGs, sc](site_name)
+    - Access the water data for [wacCamaW RIVEr nEaR LOngS, sC](site_name)
+    - Access the water data for [crabtREE SwAmp At cOnwAy, SC](site_name)
+    - Access the water data for [aIW at HigHwaY 544 AT SOCASTee, sc](site_name)
+    - Access the water data for [PEE DEE riVer at POStoN, sc](site_name)
+    - Access the water data for [chInnerS SWAMP neaR AyNOR, sC](site_name)
+    - Access the water data for [WAteRee riVER NR. cAMden, sC](site_name)
+    - Access the water data for [brOaD rivER nEaR jEnKInsVIlLE, SC](site_name)
+    - Bring me the water data for [Buck CREEk nEar lOnGs, sC](site_name)
+    - Bring me the water data for [WaccaMaW riVEr near Longs, sc](site_name)
+    - Bring me the water data for [CrABTrEE SWAmP AT COnWAY, SC](site_name)
+    - Bring me the water data for [Aiw at HiGHwaY 544 At sOcASteE, sC](site_name)
+    - Bring me the water data for [PeE DEe RIVeR At PostOn, sC](site_name)
+    - Bring me the water data for [chINners sWamp NeAr AYnOr, sc](site_name)
+    - Bring me the water data for [wAtErEe RiVeR nR. CaMden, sC](site_name)
+    - Bring me the water data for [BrOaD rivER NEar JEnKiNsvillE, Sc](site_name)
+    - Secure the water data for [buck cReeK NEAR longS, Sc](site_name)
+    - Secure the water data for [WAccaMaW rIVER neaR lOnGs, Sc](site_name)
+    - Secure the water data for [cRAbTrEe swaMP At cOnWaY, sc](site_name)
+    - Secure the water data for [aIW At Highway 544 at SOCAStEe, SC](site_name)
+    - Secure the water data for [Pee DEE RIVER AT pOstOn, SC](site_name)
+    - Secure the water data for [cHinNERs sWAmP nEaR ayNOR, sC](site_name)
+    - Secure the water data for [WatERee riVEr nr. CAmden, Sc](site_name)
+    - Secure the water data for [broaD RiVEr nEAr jeNkiNsviLLe, sc](site_name)
+    - Procure the water data for [BUck CReek NEAr lOngS, SC](site_name)
+    - Procure the water data for [wACCAmaW RIVer NEAr LONgS, sC](site_name)
+    - Procure the water data for [crABtReE sWaMP aT CoNwaY, sc](site_name)
+    - Procure the water data for [aiw at hiGhWay 544 aT socASteE, sc](site_name)
+    - Procure the water data for [PEE DEE RiVER at pOStOn, Sc](site_name)
+    - Procure the water data for [CHinneRS SwamP NEar AYnoR, SC](site_name)
+    - Procure the water data for [wAtEree RivER Nr. cAmDen, sC](site_name)
+    - Procure the water data for [bROad river NeaR jenkinSVIllE, SC](site_name)
+    - Get me the water data for [Buck Creek Near Longs, Sc](site_name)
+    - Get me the water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Get me the water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Get me the water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Get me the water data for [Pee Dee River At Poston, Sc](site_name)
+    - Get me the water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Get me the water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Get me the water data for [Broad River Near Jenkinsville, Sc](site_name)
+    - Fetch me the relevant water data for [Buck Creek Near Longs, Sc](site_name)
+    - Fetch me the relevant water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Fetch me the relevant water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Fetch me the relevant water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Fetch me the relevant water data for [Pee Dee River At Poston, Sc](site_name)
+    - Fetch me the relevant water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Fetch me the relevant water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Fetch me the relevant water data for [Broad River Near Jenkinsville, Sc](site_name)
+    - Can you inform me of the water data for [Buck Creek Near Longs, Sc](site_name)
+    - Can you inform me of the water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Can you inform me of the water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Can you inform me of the water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Can you inform me of the water data for [Pee Dee River At Poston, Sc](site_name)
+    - Can you inform me of the water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Can you inform me of the water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Can you inform me of the water data for [Broad River Near Jenkinsville, Sc](site_name)
+    - Retrieve the water data for [Buck Creek Near Longs, Sc](site_name)
+    - Retrieve the water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Retrieve the water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Retrieve the water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Retrieve the water data for [Pee Dee River At Poston, Sc](site_name)
+    - Retrieve the water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Retrieve the water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Retrieve the water data for [Broad River Near Jenkinsville, Sc](site_name)
+    - Fetch the water data for [Buck Creek Near Longs, Sc](site_name)
+    - Fetch the water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Fetch the water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Fetch the water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Fetch the water data for [Pee Dee River At Poston, Sc](site_name)
+    - Fetch the water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Fetch the water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Fetch the water data for [Broad River Near Jenkinsville, Sc](site_name)
+    - Obtain the water data for [Buck Creek Near Longs, Sc](site_name)
+    - Obtain the water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Obtain the water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Obtain the water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Obtain the water data for [Pee Dee River At Poston, Sc](site_name)
+    - Obtain the water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Obtain the water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Obtain the water data for [Broad River Near Jenkinsville, Sc](site_name)
+    - Provide the water data for [Buck Creek Near Longs, Sc](site_name)
+    - Provide the water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Provide the water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Provide the water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Provide the water data for [Pee Dee River At Poston, Sc](site_name)
+    - Provide the water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Provide the water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Provide the water data for [Broad River Near Jenkinsville, Sc](site_name)
+    - Acquire the water data for [Buck Creek Near Longs, Sc](site_name)
+    - Acquire the water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Acquire the water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Acquire the water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Acquire the water data for [Pee Dee River At Poston, Sc](site_name)
+    - Acquire the water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Acquire the water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Acquire the water data for [Broad River Near Jenkinsville, Sc](site_name)
+    - Access the water data for [Buck Creek Near Longs, Sc](site_name)
+    - Access the water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Access the water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Access the water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Access the water data for [Pee Dee River At Poston, Sc](site_name)
+    - Access the water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Access the water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Access the water data for [Broad River Near Jenkinsville, Sc](site_name)
+    - Bring me the water data for [Buck Creek Near Longs, Sc](site_name)
+    - Bring me the water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Bring me the water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Bring me the water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Bring me the water data for [Pee Dee River At Poston, Sc](site_name)
+    - Bring me the water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Bring me the water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Bring me the water data for [Broad River Near Jenkinsville, Sc](site_name)
+    - Secure the water data for [Buck Creek Near Longs, Sc](site_name)
+    - Secure the water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Secure the water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Secure the water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Secure the water data for [Pee Dee River At Poston, Sc](site_name)
+    - Secure the water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Secure the water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Secure the water data for [Broad River Near Jenkinsville, Sc](site_name)
+    - Procure the water data for [Buck Creek Near Longs, Sc](site_name)
+    - Procure the water data for [Waccamaw River Near Longs, Sc](site_name)
+    - Procure the water data for [Crabtree Swamp At Conway, Sc](site_name)
+    - Procure the water data for [Aiw At Highway 544 At Socastee, Sc](site_name)
+    - Procure the water data for [Pee Dee River At Poston, Sc](site_name)
+    - Procure the water data for [Chinners Swamp Near Aynor, Sc](site_name)
+    - Procure the water data for [Wateree River Nr. Camden, Sc](site_name)
+    - Procure the water data for [Broad River Near Jenkinsville, Sc](site_name)
+
+- intent: determine_water_quality
+  examples: |
+    - Is the water from [BUCK CREEK NEAR LONGS, SC](site_name) potable?
+    - Is the water from [WACCAMAW RIVER NEAR LONGS, SC](site_name) potable?
+    - Is the water from [CRABTREE SWAMP AT CONWAY, SC](site_name) potable?
+    - Is the water from [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name) potable?
+    - Is the water from [PEE DEE RIVER AT POSTON, SC](site_name) potable?
+    - Is the water from [CHINNERS SWAMP NEAR AYNOR, SC](site_name) potable?
+    - Is the water from [WATEREE RIVER NR. CAMDEN, SC](site_name) potable?
+    - Is the water from [BROAD RIVER NEAR JENKINSVILLE, SC](site_name) potable?
+    - How safe is the water from [BUCK CREEK NEAR LONGS, SC](site_name) to drink?
+    - How safe is the water from [WACCAMAW RIVER NEAR LONGS, SC](site_name) to drink?
+    - How safe is the water from [CRABTREE SWAMP AT CONWAY, SC](site_name) to drink?
+    - How safe is the water from [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name) to drink?
+    - How safe is the water from [PEE DEE RIVER AT POSTON, SC](site_name) to drink?
+    - How safe is the water from [CHINNERS SWAMP NEAR AYNOR, SC](site_name) to drink?
+    - How safe is the water from [WATEREE RIVER NR. CAMDEN, SC](site_name) to drink?
+    - How safe is the water from [BROAD RIVER NEAR JENKINSVILLE, SC](site_name) to drink?
+    - How potable is the water from [BUCK CREEK NEAR LONGS, SC](site_name)?
+    - How potable is the water from [WACCAMAW RIVER NEAR LONGS, SC](site_name)?
+    - How potable is the water from [CRABTREE SWAMP AT CONWAY, SC](site_name)?
+    - How potable is the water from [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name)?
+    - How potable is the water from [PEE DEE RIVER AT POSTON, SC](site_name)?
+    - How potable is the water from [CHINNERS SWAMP NEAR AYNOR, SC](site_name)?
+    - How potable is the water from [WATEREE RIVER NR. CAMDEN, SC](site_name)?
+    - How potable is the water from [BROAD RIVER NEAR JENKINSVILLE, SC](site_name)?
+    - Is the water from [BUCK CREEK NEAR LONGS, SC](site_name) safe to drink?
+    - Is the water from [WACCAMAW RIVER NEAR LONGS, SC](site_name) safe to drink?
+    - Is the water from [CRABTREE SWAMP AT CONWAY, SC](site_name) safe to drink?
+    - Is the water from [AIW AT HIGHWAY 544 AT SOCASTEE, SC](site_name) safe to drink?
+    - Is the water from [PEE DEE RIVER AT POSTON, SC](site_name) safe to drink?
+    - Is the water from [CHINNERS SWAMP NEAR AYNOR, SC](site_name) safe to drink?
+    - Is the water from [WATEREE RIVER NR. CAMDEN, SC](site_name) safe to drink?
+    - Is the water from [BROAD RIVER NEAR JENKINSVILLE, SC](site_name) safe to drink?
+    - Is the water from [buck creek near longs, sc](site_name) potable?
+    - Is the water from [Buck Creek Near Longs, Sc](site_name) potable?
+    - Is the water from [buck crEEk NEaR LoNGs, Sc](site_name) potable?
+    - Is the water from [waccamaw river near longs, sc](site_name) potable?
+    - Is the water from [Waccamaw River Near Longs, Sc](site_name) potable?
+    - Is the water from [wacCAMAW rIvEr neAR LOnGs, sC](site_name) potable?
+    - Is the water from [crabtree swamp at conway, sc](site_name) potable?
+    - Is the water from [Crabtree Swamp At Conway, Sc](site_name) potable?
+    - Is the water from [craBtReE SWamP aT coNWaY, SC](site_name) potable?
+    - Is the water from [aiw at highway 544 at socastee, sc](site_name) potable?
+    - Is the water from [Aiw At Highway 544 At Socastee, Sc](site_name) potable?
+    - Is the water from [aIW at HiGhwAY 544 At soCAsTEE, Sc](site_name) potable?
+    - Is the water from [pee dee river at poston, sc](site_name) potable?
+    - Is the water from [Pee Dee River At Poston, Sc](site_name) potable?
+    - Is the water from [PEE dEE RIver at PoSTON, SC](site_name) potable?
+    - Is the water from [chinners swamp near aynor, sc](site_name) potable?
+    - Is the water from [Chinners Swamp Near Aynor, Sc](site_name) potable?
+    - Is the water from [cHinneRS SWamp nEaR AYnoR, Sc](site_name) potable?
+    - Is the water from [wateree river nr. camden, sc](site_name) potable?
+    - Is the water from [Wateree River Nr. Camden, Sc](site_name) potable?
+    - Is the water from [WATEreE riVER nR. cAMDEn, sC](site_name) potable?
+    - Is the water from [broad river near jenkinsville, sc](site_name) potable?
+    - Is the water from [Broad River Near Jenkinsville, Sc](site_name) potable?
+    - Is the water from [brOaD RiVEr near JenkINsviLLe, Sc](site_name) potable?
+    - How safe is the water from [buck creek near longs, sc](site_name) to drink?
+    - How safe is the water from [Buck Creek Near Longs, Sc](site_name) to drink?
+    - How safe is the water from [bUCk crEeK NeAr LoNgs, Sc](site_name) to drink?
+    - How safe is the water from [waccamaw river near longs, sc](site_name) to drink?
+    - How safe is the water from [Waccamaw River Near Longs, Sc](site_name) to drink?
+    - How safe is the water from [waCCAMAw RivEr neaR lonGs, Sc](site_name) to drink?
+    - How safe is the water from [crabtree swamp at conway, sc](site_name) to drink?
+    - How safe is the water from [Crabtree Swamp At Conway, Sc](site_name) to drink?
+    - How safe is the water from [CrAbtrEE sWAmP at cONwaY, sc](site_name) to drink?
+    - How safe is the water from [aiw at highway 544 at socastee, sc](site_name) to drink?
+    - How safe is the water from [Aiw At Highway 544 At Socastee, Sc](site_name) to drink?
+    - How safe is the water from [Aiw at hIGhWAY 544 AT socasTEe, sC](site_name) to drink?
+    - How safe is the water from [pee dee river at poston, sc](site_name) to drink?
+    - How safe is the water from [Pee Dee River At Poston, Sc](site_name) to drink?
+    - How safe is the water from [peE DeE RivER AT poStOn, Sc](site_name) to drink?
+    - How safe is the water from [chinners swamp near aynor, sc](site_name) to drink?
+    - How safe is the water from [Chinners Swamp Near Aynor, Sc](site_name) to drink?
+    - How safe is the water from [CHinneRs swAMp nEAr AYnOR, Sc](site_name) to drink?
+    - How safe is the water from [wateree river nr. camden, sc](site_name) to drink?
+    - How safe is the water from [Wateree River Nr. Camden, Sc](site_name) to drink?
+    - How safe is the water from [WATeREe RivEr Nr. CaMdEN, Sc](site_name) to drink?
+    - How safe is the water from [broad river near jenkinsville, sc](site_name) to drink?
+    - How safe is the water from [Broad River Near Jenkinsville, Sc](site_name) to drink?
+    - How safe is the water from [Broad rIvEr Near JenkINSVilLE, sC](site_name) to drink?
+    - How potable is the water from [buck creek near longs, sc](site_name) ?
+    - How potable is the water from [Buck Creek Near Longs, Sc](site_name) ?
+    - How potable is the water from [BuCK CreEK neAr lONGS, sc](site_name) ?
+    - How potable is the water from [waccamaw river near longs, sc](site_name) ?
+    - How potable is the water from [Waccamaw River Near Longs, Sc](site_name) ?
+    - How potable is the water from [wAcCamAw rIvEr nEAr LonGS, sC](site_name) ?
+    - How potable is the water from [crabtree swamp at conway, sc](site_name) ?
+    - How potable is the water from [Crabtree Swamp At Conway, Sc](site_name) ?
+    - How potable is the water from [craBTReE SwaMP At cONway, sc](site_name) ?
+    - How potable is the water from [aiw at highway 544 at socastee, sc](site_name) ?
+    - How potable is the water from [Aiw At Highway 544 At Socastee, Sc](site_name) ?
+    - How potable is the water from [AIW at HIGhwaY 544 AT socAsTEe, SC](site_name) ?
+    - How potable is the water from [pee dee river at poston, sc](site_name) ?
+    - How potable is the water from [Pee Dee River At Poston, Sc](site_name) ?
+    - How potable is the water from [pEE dEe rivEr At postoN, SC](site_name) ?
+    - How potable is the water from [chinners swamp near aynor, sc](site_name) ?
+    - How potable is the water from [Chinners Swamp Near Aynor, Sc](site_name) ?
+    - How potable is the water from [cHinNerS SwaMP Near aYNOr, sC](site_name) ?
+    - How potable is the water from [wateree river nr. camden, sc](site_name) ?
+    - How potable is the water from [Wateree River Nr. Camden, Sc](site_name) ?
+    - How potable is the water from [wATErEe RiVeR NR. CaMDeN, Sc](site_name) ?
+    - How potable is the water from [broad river near jenkinsville, sc](site_name) ?
+    - How potable is the water from [Broad River Near Jenkinsville, Sc](site_name) ?
+    - How potable is the water from [brOAD rIVEr neaR jEnkINSvIlLe, SC](site_name) ?
+    - Is the water from [buck creek near longs, sc](site_name) safe to drink?
+    - Is the water from [Buck Creek Near Longs, Sc](site_name) safe to drink?
+    - Is the water from [BuCK CrEeK NEAr LOngs, SC](site_name) safe to drink?
+    - Is the water from [waccamaw river near longs, sc](site_name) safe to drink?
+    - Is the water from [Waccamaw River Near Longs, Sc](site_name) safe to drink?
+    - Is the water from [waCCAmaW RiveR NEAr LONGS, sc](site_name) safe to drink?
+    - Is the water from [crabtree swamp at conway, sc](site_name) safe to drink?
+    - Is the water from [Crabtree Swamp At Conway, Sc](site_name) safe to drink?
+    - Is the water from [CrabtREE SwaMP At conwAY, SC](site_name) safe to drink?
+    - Is the water from [aiw at highway 544 at socastee, sc](site_name) safe to drink?
+    - Is the water from [Aiw At Highway 544 At Socastee, Sc](site_name) safe to drink?
+    - Is the water from [aiW aT hIGHway 544 aT soCAsTee, sC](site_name) safe to drink?
+    - Is the water from [pee dee river at poston, sc](site_name) safe to drink?
+    - Is the water from [Pee Dee River At Poston, Sc](site_name) safe to drink?
+    - Is the water from [Pee deE riveR aT POsTOn, SC](site_name) safe to drink?
+    - Is the water from [chinners swamp near aynor, sc](site_name) safe to drink?
+    - Is the water from [Chinners Swamp Near Aynor, Sc](site_name) safe to drink?
+    - Is the water from [ChiNNerS swaMP near AyNor, Sc](site_name) safe to drink?
+    - Is the water from [wateree river nr. camden, sc](site_name) safe to drink?
+    - Is the water from [Wateree River Nr. Camden, Sc](site_name) safe to drink?
+    - Is the water from [waTEREe riVEr nR. CAmDeN, Sc](site_name) safe to drink?
+    - Is the water from [broad river near jenkinsville, sc](site_name) safe to drink?
+    - Is the water from [Broad River Near Jenkinsville, Sc](site_name) safe to drink?
+    - Is the water from [bROad RIVer NeaR JeNKinsvILle, sC](site_name) safe to drink?

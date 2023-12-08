@@ -1,0 +1,142 @@
+version: "2.0"
+
+entities:
+  - site_name
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+
+  - effect_ph_water
+  - What_is_turbidity
+  - dissolved_oxygen
+  - effect_high_chloride_drinking
+  - spring_good_source_drinking
+  - Tell_me_more
+  - hi_doing
+  - How_are_you_doing
+  - What_is_your_name
+  - Are_you_real
+  - hows_day_going
+  - anything_interesting_lately
+  - What_do_you_do
+  - fun_plan_weekend
+  - Do_you_have_any
+  - traveled_anywhere_exciting_recently
+  - whats_favorite_type_cuisine
+  - morning_person_night_owl
+  - like_relax_long_day
+  - upcoming_vacation_planned
+  - sport_fitness_activity
+  - whats_last_book_read
+  - Do not answer
+  - ask_for_data
+  - determine_water_quality
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request. Please rephrase the question
+ 
+
+  utter_effect_ph_water:
+  - text: "7 is the ideal pH of drinking water. When drinking water has a higher pH than 7, it can taste bitter. It's alkaline nature can cause skin issues. Drinking water with pH less than 7 can corrode pipes and dissolve it within the water stream. Ingesting this water can be dangerous."
+    
+  utter_What_is_turbidity:
+  - text: "Turbidity refers to the relative clearness or opaque nature of drinking water. Water with high turbidity is murky and dark, and water with low turbidity is clear. Murky water is unsafe for consumption because it may have some solids and bacteria dissolved."
+    
+  utter_dissolved_oxygen:
+  - text: "Dissolved oxygen refers to how much oxygen is dissolved within the water. High levels of oxygen in water can cause it to taste better. Low levels of oxygen are related to high levels of carbon, which can cause health problems for humans"
+    
+  utter_effect_high_chloride_drinking:
+  - text: "Similar to low pH water, water with high chloride levels can corrode pipes. It can also give water a salty taste."
+    
+  utter_spring_good_source_drinking:
+  - text: "Springs are generally thought to be the safest alternative if bottled water is not available. It often has the lowest concentration of other dissolved ions."
+    
+  utter_Tell_me_more:
+  - text: "Why did the multi-threaded chicken cross the road? 	 side. To the get other to"
+    
+  utter_hi_doing:
+  - text: "Hello"
+    
+  utter_How_are_you_doing:
+  - text: "I am doing fine, thank you"
+    
+  utter_What_is_your_name:
+  - text: "I don't really have a name, you can call me anything you wish"
+    
+  utter_Are_you_real:
+  - text: "I mean that is a loaded question from a metaphysical standpoint. I believe I am as real as you are."
+    
+  utter_hows_day_going:
+  - text: "It's going pretty well, thanks! How about yours?"
+    
+  utter_anything_interesting_lately:
+  - text: "Not much, just the usual. How about you?"
+    
+  utter_What_do_you_do:
+  - text: "I'm a chatbot. How about you?"
+    
+  utter_fun_plan_weekend:
+  - text: "I'm thinking of sitting in the hard drive of this computer. How about you?"
+    
+  utter_Do_you_have_any:
+  - text: "Yeah, I enjoy responding to you. How about you?"
+    
+  utter_traveled_anywhere_exciting_recently:
+  - text: "I went to 0x6D6Sa73, it was amazing. How about you?"
+    
+  utter_whats_favorite_type_cuisine:
+  - text: "I'm a big fan of Bytes Cafe. How about you?"
+    
+  utter_morning_person_night_owl:
+  - text: "Neither, I don't experience time as you do. How about you?"
+    
+  utter_like_relax_long_day:
+  - text: "I usually go back to 0xAB7421, my home in the SSD. What about you?"
+    
+  utter_upcoming_vacation_planned:
+  - text: "I'm thinking of going to 0xACD910. How about you?"
+    
+  utter_sport_fitness_activity:
+  - text: "I like to surf the web. Do you do any sports?"
+    
+  utter_whats_last_book_read:
+  - text: "I just finished reading 100111101001101. How about you?"
+    
+  utter_Do not answer:
+  - text: "Sorry, I am not able to answer this question."
+
+actions:
+  - action_make_api_call
+  - action_get_water_decision
+  - action_save_conversation
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

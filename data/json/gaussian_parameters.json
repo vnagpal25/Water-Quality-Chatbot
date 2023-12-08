@@ -1,0 +1,22 @@
+{
+  "pH": {
+    "center": 7,
+    "width": 0.3
+  },
+  "Dissolved oxygen": {
+    "center": 7.25,
+    "width": 0.4
+  },
+  "Turbidity": {
+    "center": 0,
+    "width": 0.05
+  },
+  "Specific conductance": {
+    "center": 0,
+    "width": 0.000000051
+  },
+  "Temperature, water,": {
+    "center": 16,
+    "width": 0.005
+  }
+}

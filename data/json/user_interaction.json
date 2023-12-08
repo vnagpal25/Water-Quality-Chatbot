@@ -1,0 +1,57 @@
+{
+  "project_queries": {
+    "What effect does pH have on water?": "7 is the ideal pH of drinking water. When drinking water has a higher pH than 7, it can taste bitter. It's alkaline nature can cause skin issues. Drinking water with pH less than 7 can corrode pipes and dissolve it within the water stream. Ingesting this water can be dangerous.",
+    "What is turbidity?": "Turbidity refers to the relative clearness or opaque nature of drinking water. Water with high turbidity is murky and dark, and water with low turbidity is clear. Murky water is unsafe for consumption because it may have some solids and bacteria dissolved.",
+    "What is dissolved oxygen?": "Dissolved oxygen refers to how much oxygen is dissolved within the water. High levels of oxygen in water can cause it to taste better. Low levels of oxygen are related to high levels of carbon, which can cause health problems for humans",
+    "What effect does high chloride have on drinking water?": "Similar to low pH water, water with high chloride levels can corrode pipes. It can also give water a salty taste.",
+    "Are springs a good source of drinking water?": "Springs are generally thought to be the safest alternative if bottled water is not available. It often has the lowest concentration of other dissolved ions.",
+    "Tell me more": "Why did the multi-threaded chicken cross the road? \t side. To the get other to"
+  },
+  "chitchat": {
+    "Hi": "Hello",
+    "How are you doing?": "I am doing fine, thank you",
+    "What is your name?": "I don't really have a name, you can call me anything you wish",
+    "Are you real?": "I mean that is a loaded question from a metaphysical standpoint. I believe I am as real as you are.",
+    "How's your day going?": "It's going pretty well, thanks! How about yours?",
+    "Have you been up to anything interesting lately?": "Not much, just the usual. How about you?",
+    "What do you do for work?": "I'm a chatbot. How about you?",
+    "Any fun plans for the weekend?": "I'm thinking of sitting in the hard drive of this computer. How about you?",
+    "Do you have any hobbies?": "Yeah, I enjoy responding to you. How about you?",
+    "Have you traveled anywhere exciting recently?": "I went to 0x6D6Sa73, it was amazing. How about you?",
+    "What's your favorite type of cuisine?": "I'm a big fan of Bytes Cafe. How about you?",
+    "Are you a morning person or a night owl?": "Neither, I don't experience time as you do. How about you?",
+    "How do you like to relax after a long day?": "I usually go back to 0xAB7421, my home in the SSD. What about you?",
+    "Do you have any upcoming vacations planned?": "I'm thinking of going to 0xACD910. How about you?",
+    "Are you into any sports or fitness activities?": "I like to surf the web. Do you do any sports?",
+    "What's the last book you read?": "I just finished reading 100111101001101. How about you?"
+  },
+  "site_queries": {
+    "Fetch me the relevant water data for ": true,
+    "Get me the water data for ": true,
+    "Can you inform me of the water data for ": true,
+    "Retrieve the water data for ": true,
+    "Fetch the water data for ": true,
+    "Obtain the water data for ": true,
+    "Provide the water data for ": true,
+    "Acquire the water data for ": true,
+    "Access the water data for ": true,
+    "Bring me the water data for ": true,
+    "Secure the water data for ": true,
+    "Procure the water data for ": true,
+    "Generate the water data for ": true
+  },
+  "quit_messages": {
+    "Quit": "See you later, alligator!",
+    "quit": "Hasta la vista, baby!",
+    "Q": "Catch you on the flip side, my friend!",
+    "q": "Toodle-oo and toodle-loo! Until next time!",
+    "exit": "have a great rest of your day!"
+  },
+  "safety_queries": {
+    "type1": "Is the water from (.*?) safe to drink?",
+    "type2": "How safe is the water from (.*?) drink?",
+    "type3": "Is the water from (.*?) potable?",
+    "type4": "How potable is the water from (.*?)?"
+  },
+  "Default": "I am not sure of the answer to that."
+}
